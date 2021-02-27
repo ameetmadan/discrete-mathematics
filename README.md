@@ -11,6 +11,6 @@
 - Extra topic: Google Image Search
 - Chapter 11: Algorithm Complexity
 
-| Week   | Markdown                         | PDF | HTML |
-| ------ | -------------------------------- | --- | ---- |
-| Week 1 | [Markdown]("/../week1/week1.md") | PDF | HTML |
+| Week   | Markdown                     | PDF | HTML |
+| ------ | ---------------------------- | --- | ---- |
+| Week 1 | [Markdown]("week1/week1.md") | PDF | HTML |
