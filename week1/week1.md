@@ -27,12 +27,14 @@
 ### Truth tables
 
 #### Negation
+
 | $$ p $$ | $$ \sim p $$ |
 | ------- | ------------ |
 | T       | F            |
 | F       | T            |
 
 #### Conjunction
+
 | $$ p $$ | $$  q $$ | $$ (p \land q) $$ |
 | ------- | -------- | ----------------- |
 | T       | T        | T                 |
@@ -41,6 +43,7 @@
 | F       | F        | F                 |
 
 #### Disjunction
+
 | $$ p $$ | $$ q $$ | $$ (p \lor q)  $$ |
 | ------- | ------- | ----------------- |
 | T       | T       | T                 |
@@ -49,6 +52,7 @@
 | F       | F       | F                 |
 
 #### Exclusive or (XOR)
+
 $$ p \oplus q \equiv (p \lor q ) \land \sim(p \land q) $$ 
 | $$ p $$ | $$ q $$ | $$ p \lor q $$ | $$ p \land q $$ | $$ \sim(p \land q) $$ | $$ p \oplus q $$ |
 | ------- | ------- | -------------- | --------------- | --------------------- | ---------------- |
@@ -59,6 +63,20 @@ $$ p \oplus q \equiv (p \lor q ) \land \sim(p \land q) $$
 
 #### Three input statements
 
-| $$ p $$ | $$ q $$ | $$ r $$ | $$ g $$ | $$ f $$ | $$ d $$ |
-| ------- | ------- | ------- | ------- | ------- | ------- |
-|         |         |         |         |         |         |
+With three statements, it makes sense to evaluate the 
+
+| $$ p $$ | $$ q $$ | $$ r $$ | $$ p \land q $$ | $$ \sim r $$ | $$ (p \land q) \lor \sim r $$ |
+| ------- | ------- | ------- | --------------- | ------------ | ----------------------------- |
+| T       | T       | T       | T               | F            | T                             |
+| T       | T       | F       | T               | T            | T                             |
+| T       | F       | T       | F               | F            | F                             |
+| T       | F       | F       | F               | T            | T                             |
+| F       | T       | T       | F               | F            | F                             |
+| F       | T       | F       | F               | T            | T                             |
+| F       | F       | T       | F               | F            | F                             |
+| F       | F       | F       | F               | T            | T                             |
+
+#### De Morgan's law
+
+$$ \sim(p \lor q) \equiv \sim p \land  \sim q  $$ 
+$$ \sim(p \land q) \equiv \sim p \lor  \sim q  $$ 
