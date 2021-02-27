@@ -100,7 +100,7 @@ $$ p \land c \equiv c $$
 | -------------------- | --- | --- |
 | Commutative          |     |     |
 | Associative          |     |     |
-|                      |     |     |
+| Distributive         |     |     |
 | Identity             |     |     |
 | Negation             |     |     |
 | Double negative      |     |     |
