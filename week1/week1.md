@@ -88,6 +88,6 @@ A tautology (denoted by the symbol t) is a statement that is always true regardl
 of the truth values of its component statements
 $$ p \land t \equiv t $$
 
-A contradiction (denoted by the symbol c) is a statement that is always false
+A contradiction (denote by the symbol c) is a statement that is always false
 regardless of the truth values of its component statements
 $$ p \land c \equiv c $$
