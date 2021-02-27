@@ -79,6 +79,8 @@ With three statements, it makes sense to evaluate the each of the statements ind
 
 #### De Morgan's law
 
+When the negation sign is applied to a parantheses, the expressions "and" as well as "or" are interchanged.
+
 $$ \sim(p \lor q) \equiv \sim p \land  \sim q  $$ 
 $$ \sim(p \land q) \equiv \sim p \lor  \sim q  $$ 
 
@@ -91,3 +93,20 @@ $$ p \land t \equiv t $$
 A contradiction (denote by the symbol c) is a statement that is always false
 regardless of the truth values of its component statements
 $$ p \land c \equiv c $$
+
+## Basic logical equivalences
+
+| Name                 |     |     |
+| -------------------- | --- | --- |
+| Commutative          |     |     |
+| Associative          |     |     |
+| Distributive         |     |     |
+| Identity             |     |     |
+| Negation             |     |     |
+| Double negative      |     |     |
+| Idempotent           |     |     |
+| Universal bound      |     |     |
+| De Morgan's          |     |     |
+| Absorption           |     |     |
+| Negations of t and c |     |     |
+| Commutative          |     |     |
