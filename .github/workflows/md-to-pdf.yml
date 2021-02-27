@@ -25,7 +25,7 @@ jobs:
           # image_import: ./images
           # Default is true, can set to false to only get PDF files
           build_html: true
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v2
         with:
           name: docs
           path: pdfs
