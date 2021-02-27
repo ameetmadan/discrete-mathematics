@@ -96,17 +96,17 @@ $$ p \land c \equiv c $$
 
 ## Basic logical equivalences
 
-| Name                 |     |     |
-| -------------------- | --- | --- |
-| Commutative          |     |     |
-| Associative          |     |     |
-| Distributive         |     |     |
-| Identity             |     |     |
-| Negation             |     |     |
-| Double negative      |     |     |
-| Idempotent           |     |     |
-| Universal bound      |     |     |
-| De Morgan's          |     |     |
-| Absorption           |     |     |
-| Negations of t and c |     |     |
-| Commutative          |     |     |
+| Name              |     |     |
+| ----------------- | --- | --- |
+| Commutative       |     |     |
+| Associative       |     |     |
+| Distributive      |     |     |
+| Identity          |     |     |
+| Negation          |     |     |
+| Double negative   |     |     |
+| Idempotent        |     |     |
+| Universal bound   |     |     |
+| De Morgan's       |     |     |
+| Absorption        |     |     |
+| Negations of t  c |     |     |
+| Commutative       |     |     |
