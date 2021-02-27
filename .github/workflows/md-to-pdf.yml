@@ -19,7 +19,7 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: week1
-          output_dir: week1
+          output_dir: pdfs
           # images_dir: docs/images
           # for example <img src="./images/file-name.png">
           # image_import: ./images
