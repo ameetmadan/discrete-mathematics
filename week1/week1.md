@@ -6,19 +6,19 @@
 
 ## Compound statements (connectives)
 
-| Name | Term        | Symbol         |
-| ---- | ----------- | -------------- |
-| NOT  | Negation    | $$ \sim  $$    |
-| AND  | Conjunction | $$  \wedge  $$ |
-| OR   | Disjunction | $$  \lor  $$   |
+| Name  |    Term     |     Symbol     |
+| :---: | :---------: | :------------: |
+|  NOT  |  Negation   |  $$ \sim  $$   |
+|  AND  | Conjunction | $$  \wedge  $$ |
+|  OR   | Disjunction |  $$  \lor  $$  |
 
 - Variables in proportional logic can only have two values, either true or false. This is why they are called boolean variables.
-- Negation (~) has presedence over ∧ or ∨.
-
-| Name                                      | Term            |
-| ----------------------------------------- | --------------- |
-| "It is hot"                               | $$ p $$         |
-| "It is sunny"                             | $$ q $$         |
+- Negation has presedence over conjunction and disjunction.
+ 
+| Name                                      |      Term       |
+| ----------------------------------------- | :-------------: |
+| "It is hot"                               |     $$ p $$     |
+| "It is sunny"                             |     $$ q $$     |
 | "It is not hot but it is sunny"           | $$ \sim p∧q $$  |
 | "It is neither hot nor sunny"             | $$ \sim(p∧q) $$ |
 | "It is not true that it is hot and sunny" | $$ \neg(p∧q) $$ |
@@ -29,54 +29,65 @@
 #### Negation
 
 | $$ p $$ | $$ \sim p $$ |
-| ------- | ------------ |
-| T       | F            |
-| F       | T            |
+| :-----: | :----------: |
+|    T    |      F       |
+|    F    |      T       |
 
 #### Conjunction
 
 | $$ p $$ | $$  q $$ | $$ (p \land q) $$ |
-| ------- | -------- | ----------------- |
-| T       | T        | T                 |
-| T       | F        | F                 |
-| F       | T        | F                 |
-| F       | F        | F                 |
+| :-----: | :------: | :---------------: |
+|    T    |    T     |         T         |
+|    T    |    F     |         F         |
+|    F    |    T     |         F         |
+|    F    |    F     |         F         |
 
 #### Disjunction
 
 | $$ p $$ | $$ q $$ | $$ (p \lor q)  $$ |
-| ------- | ------- | ----------------- |
-| T       | T       | T                 |
-| T       | F       | T                 |
-| F       | T       | T                 |
-| F       | F       | F                 |
+| :-----: | :-----: | :---------------: |
+|    T    |    T    |         T         |
+|    T    |    F    |         T         |
+|    F    |    T    |         T         |
+|    F    |    F    |         F         |
 
 #### Exclusive or (XOR)
 
 $$ p \oplus q \equiv (p \lor q ) \land \sim(p \land q) $$ 
+
 | $$ p $$ | $$ q $$ | $$ p \lor q $$ | $$ p \land q $$ | $$ \sim(p \land q) $$ | $$ p \oplus q $$ |
-| ------- | ------- | -------------- | --------------- | --------------------- | ---------------- |
-| T       | T       | T              | T               | F                     | F                |
-| T       | F       | T              | F               | T                     | T                |
-| F       | T       | T              | F               | T                     | T                |
-| F       | F       | F              | F               | T                     | F                |
+| :-----: | :-----: | :------------: | :-------------: | :-------------------: | :--------------: |
+|    T    |    T    |       T        |        T        |           F           |        F         |
+|    T    |    F    |       T        |        F        |           T           |        T         |
+|    F    |    T    |       T        |        F        |           T           |        T         |
+|    F    |    F    |       F        |        F        |           T           |        F         |
 
 #### Three input statements
 
-With three statements, it makes sense to evaluate the 
+With three statements, it makes sense to evaluate the each of the statements individually and then put the stements together.
 
 | $$ p $$ | $$ q $$ | $$ r $$ | $$ p \land q $$ | $$ \sim r $$ | $$ (p \land q) \lor \sim r $$ |
-| ------- | ------- | ------- | --------------- | ------------ | ----------------------------- |
-| T       | T       | T       | T               | F            | T                             |
-| T       | T       | F       | T               | T            | T                             |
-| T       | F       | T       | F               | F            | F                             |
-| T       | F       | F       | F               | T            | T                             |
-| F       | T       | T       | F               | F            | F                             |
-| F       | T       | F       | F               | T            | T                             |
-| F       | F       | T       | F               | F            | F                             |
-| F       | F       | F       | F               | T            | T                             |
+| :-----: | :-----: | :-----: | :-------------: | :----------: | :---------------------------: |
+|    T    |    T    |    T    |        T        |      F       |               T               |
+|    T    |    T    |    F    |        T        |      T       |               T               |
+|    T    |    F    |    T    |        F        |      F       |               F               |
+|    T    |    F    |    F    |        F        |      T       |               T               |
+|    F    |    T    |    T    |        F        |      F       |               F               |
+|    F    |    T    |    F    |        F        |      T       |               T               |
+|    F    |    F    |    T    |        F        |      F       |               F               |
+|    F    |    F    |    F    |        F        |      T       |               T               |
 
-#### De Morgan's law
+#### De Morgan's law
 
 $$ \sim(p \lor q) \equiv \sim p \land  \sim q  $$ 
 $$ \sim(p \land q) \equiv \sim p \lor  \sim q  $$ 
+
+#### Tautology and contradiction
+
+A tautology (denoted by the symbol t) is a statement that is always true regardless
+of the truth values of its component statements
+$$ p \land t \equiv t $$
+
+A contradiction (denoted by the symbol c) is a statement that is always false
+regardless of the truth values of its component statements
+$$ p \land c \equiv c $$
