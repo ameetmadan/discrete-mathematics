@@ -11,6 +11,18 @@
 - Extra topic: Google Image Search
 - Chapter 11: Algorithm Complexity
 
-| Week   | Markdown                             | PDF | HTML |
-| ------ | ------------------------------------ | --- | ---- |
-| Week 1 | [Markdown]("/master/week1/week1.md") | PDF | HTML |
+### Table of contents
+
+[Week 1]
+
+- [Proportional Logic](#proportional-logic)
+  - [Compound statements (connectives)](#compound-statements-connectives)
+    - [Truth tables](#truth-tables)
+      - [Negation](#negation)
+      - [Conjunction](#conjunction)
+      - [Disjunction](#disjunction)
+      - [Exclusive or (XOR)](#exclusive-or-xor)
+      - [Three input statements](#three-input-statements)
+      - [De Morgan's law](#de-morgans-law)
+      - [Tautology and contradiction](#tautology-and-contradiction)
+  - [Basic logical equivalences](#basic-logical-equivalences)

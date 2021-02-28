@@ -33,6 +33,8 @@
 |    T    |      F       |
 |    F    |      T       |
 
+\newpage
+
 #### Conjunction
 
 | $$ p $$ | $$  q $$ | $$ (p \land q) $$ |
@@ -96,17 +98,34 @@ $$ p \land c \equiv c $$
 
 ## Basic logical equivalences
 
-| Name                 |     |     |
-| -------------------- | --- | --- |
-| Commutative          |     |     |
-| Associative          |     |     |
-| Distributive         |     |     |
-| Identity             |     |     |
-| Negation             |     |     |
-| Double negative      |     |     |
-| Idempotent           |     |     |
-| Universal bound      |     |     |
-| De Morgan's          |     |     |
-| Absorption           |     |     |
-| Negations of t and c |     |     |
-| Commutative          |     |     |
+|         Laws         |                                                               |
+| :------------------: | :-----------------------------------------------------------: |
+|     Commutative      |               $$ p \land q \equiv q \land p $$                |
+|     Associative      |     $$ (p \land q) \land r \equiv p \land (q \land r) $$      |
+|     Distributive     | $$ p \land (q \lor r) \equiv (p \land q) \lor (p \land r)  $$ |
+|       Identity       |                             $$ $$                             |
+|       Negation       |                             $$ $$                             |
+|   Double negative    |                             $$ $$                             |
+|      Idempotent      |                             $$ $$                             |
+|   Universal bound    |                             $$ $$                             |
+|     De Morgan's      |                             $$ $$                             |
+|      Absorption      |                             $$ $$                             |
+| Negations of t and c |                             $$ $$                             |
+|     Commutative      |                             $$ $$                             |
+
+\newpage
+
+|         Laws         |                                                              |
+| :------------------: | :----------------------------------------------------------: |
+|     Commutative      |                $$ p \lor q \equiv q \lor p $$                |
+|     Associative      |       $$ (p \lor q) \lor r \equiv p \lor (q \lor r) $$       |
+|     Distributive     | $$  p \lor (q \land r) \equiv (p \lor q) \land (p \lor r) $$ |
+|       Identity       |                            $$ $$                             |
+|       Negation       |                            $$ $$                             |
+|      Idempotent      |                            $$ $$                             |
+|   Double negative    |                            $$ $$                             |
+|   Universal bound    |                            $$ $$                             |
+|     De Morgan's      |                            $$ $$                             |
+|      Absorption      |                            $$ $$                             |
+| Negations of t and c |                            $$ $$                             |
+|     Commutative      |                            $$ $$                             |
