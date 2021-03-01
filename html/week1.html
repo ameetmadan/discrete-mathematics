@@ -431,14 +431,14 @@
 <p>When the negation sign is applied to a parantheses, the expressions “and” as well as “or” are interchanged.</p>
 <p><span class="math display"> ∼ (<em>p</em> ∨ <em>q</em>) ≡  ∼ <em>p</em> ∧  ∼ <em>q</em></span> <span class="math display"> ∼ (<em>p</em> ∧ <em>q</em>) ≡  ∼ <em>p</em> ∨  ∼ <em>q</em></span></p>
 <h4 id="tautology-and-contradiction">Tautology and contradiction</h4>
-<p>A tautology (denoted by the symbol t) is a statement that is always true regardless of the truth values of its component statements <span class="math display"><em>p</em> ∧ <em>t</em> ≡ <em>t</em></span></p>
-<p>A contradiction (denote by the symbol c) is a statement that is always false regardless of the truth values of its component statements <span class="math display"><em>p</em> ∧ <em>c</em> ≡ <em>c</em></span></p>
+<p>A tautology (denoted by the symbol t) is a statement that is always true regardless of the truth values of its component statements <span class="math display">$$ p \land t \equiv \bf t $$</span></p>
+<p>A contradiction (denote by the symbol c) is a statement that is always false regardless of the truth values of its component statements <span class="math display">$$ p \land c \equiv  \bf c $$</span></p>
 <h2 id="basic-logical-equivalences">Basic logical equivalences</h2>
 <table>
 <thead>
 <tr class="header">
+<th style="text-align: center;">Name</th>
 <th style="text-align: center;">Laws</th>
-<th style="text-align: center;"></th>
 </tr>
 </thead>
 <tbody>
@@ -456,47 +456,43 @@
 </tr>
 <tr class="even">
 <td style="text-align: center;">Identity</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display"><em>p</em> ∧ <em>t</em> ≡ <em>p</em></span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Negation</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display">$$  p \lor \sim p \equiv \bf t $$</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Double negative</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display"> ∼ ( ∼ <em>p</em>) ≡ <em>p</em></span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Idempotent</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display"><em>p</em> ∧ <em>p</em> ≡ <em>p</em></span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Universal bound</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display">$$ p \lor \bf t \equiv \bf t  $$</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">De Morgan’s</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display"> ∼ (<em>p</em> ∧ <em>q</em>) ≡  ∼ <em>p</em> ∨  ∼ <em>q</em></span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Absorption</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display"><em>p</em> ∨ (<em>p</em> ∧ <em>q</em>) ≡ <em>p</em></span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Negations of t and c</td>
-<td style="text-align: center;"><span class="math display"></span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Commutative</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display">$$ \sim \bf t \equiv c $$</span></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr class="header">
+<th style="text-align: center;">Name</th>
 <th style="text-align: center;">Laws</th>
-<th style="text-align: center;"></th>
 </tr>
 </thead>
 <tbody>
@@ -514,39 +510,106 @@
 </tr>
 <tr class="even">
 <td style="text-align: center;">Identity</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display"><em>p</em> ∨ <em>c</em> ≡ <em>p</em></span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Negation</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display">$$ p \land \sim p \equiv \bf c $$</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Idempotent</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;">Double negative</td>
+<td style="text-align: center;">N. A.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Double negative</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;">Idempotent</td>
+<td style="text-align: center;"><span class="math display"><em>p</em> ∧ <em>p</em> ≡ <em>p</em></span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Universal bound</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display">$$ p \land \bf c \equiv \bf c $$</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">De Morgan’s</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display"> ∼ (<em>p</em> ∨ <em>q</em>) ≡  ∼ <em>p</em> ∧  ∼ <em>q</em></span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Absorption</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display"><em>p</em> ∧ (<em>p</em> ∨ <em>q</em>) ≡ <em>p</em></span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Negations of t and c</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;"><span class="math display">$$ \sim \bf c \equiv t $$</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="condtional-statements">Condtional statements</h2>
+<p>If-then conditional statements, if is the hypothesis and q is the conclusion</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math display"><em>p</em></span></th>
+<th style="text-align: center;"><span class="math display"><em>q</em></span></th>
+<th style="text-align: center;"><span class="math display"><em>p</em> → <em>q</em></span></th>
+<th style="text-align: center;"><span class="math display"> ∼ <em>p</em> ∨ <em>q</em></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Commutative</td>
-<td style="text-align: center;"><span class="math display"></span></td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+</tbody>
+</table>
+<p>If-and only if means p implies q and q implies p. </p>
+<p><span class="math display">(<em>p</em> → <em>q</em>) ∧ (<em>q</em> → <em>p</em>)</span></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math display"><em>p</em></span></th>
+<th style="text-align: center;"><span class="math display"><em>q</em></span></th>
+<th style="text-align: center;"><span class="math display"><em>p</em> ↔︎ <em>q</em></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
 </tr>
 </tbody>
 </table>

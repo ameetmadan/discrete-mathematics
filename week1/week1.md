@@ -23,6 +23,7 @@
 | "It is neither hot nor sunny"             | $$ \sim(p∧q) $$ |
 | "It is not true that it is hot and sunny" | $$ \neg(p∧q) $$ |
 
+\newpage
 
 ### Truth tables
 
@@ -33,7 +34,6 @@
 |    T    |      F       |
 |    F    |      T       |
 
-\newpage
 
 #### Conjunction
 
@@ -64,6 +64,8 @@ $$ p \oplus q \equiv (p \lor q ) \land \sim(p \land q) $$
 |    F    |    T    |       T        |        F        |           T           |        T         |
 |    F    |    F    |       F        |        F        |           T           |        F         |
 
+\newpage
+
 #### Three input statements
 
 With three statements, it makes sense to evaluate the each of the statements individually and then put the stements together.
@@ -90,42 +92,66 @@ $$ \sim(p \land q) \equiv \sim p \lor  \sim q  $$
 
 A tautology (denoted by the symbol t) is a statement that is always true regardless
 of the truth values of its component statements
-$$ p \land t \equiv t $$
+$$ p \land t \equiv \bf t $$
 
 A contradiction (denote by the symbol c) is a statement that is always false
 regardless of the truth values of its component statements
-$$ p \land c \equiv c $$
+$$ p \land c \equiv  \bf c $$
+
+\newpage
 
 ## Basic logical equivalences
 
-|         Laws         |                                                               |
+|         Name         |                             Laws                              |
 | :------------------: | :-----------------------------------------------------------: |
 |     Commutative      |               $$ p \land q \equiv q \land p $$                |
 |     Associative      |     $$ (p \land q) \land r \equiv p \land (q \land r) $$      |
 |     Distributive     | $$ p \land (q \lor r) \equiv (p \land q) \lor (p \land r)  $$ |
-|       Identity       |                             $$ $$                             |
-|       Negation       |                             $$ $$                             |
-|   Double negative    |                             $$ $$                             |
-|      Idempotent      |                             $$ $$                             |
-|   Universal bound    |                             $$ $$                             |
-|     De Morgan's      |                             $$ $$                             |
-|      Absorption      |                             $$ $$                             |
-| Negations of t and c |                             $$ $$                             |
-|     Commutative      |                             $$ $$                             |
+|       Identity       |                   $$ p \land t \equiv p $$                    |
+|       Negation       |               $$  p \lor \sim p \equiv \bf t $$               |
+|   Double negative    |                 $$ \sim (\sim p) \equiv p $$                  |
+|      Idempotent      |                   $$ p \land p \equiv p $$                    |
+|   Universal bound    |               $$ p \lor \bf t \equiv \bf t  $$                |
+|     De Morgan's      |       $$ \sim (p \land q) \equiv \sim p \lor \sim q $$        |
+|      Absorption      |               $$ p \lor (p \land q) \equiv p $$               |
+| Negations of t and c |                   $$ \sim \bf t \equiv c $$                   |
 
-\newpage
 
-|         Laws         |                                                              |
+|         Name         |                             Laws                             |
 | :------------------: | :----------------------------------------------------------: |
 |     Commutative      |                $$ p \lor q \equiv q \lor p $$                |
 |     Associative      |       $$ (p \lor q) \lor r \equiv p \lor (q \lor r) $$       |
 |     Distributive     | $$  p \lor (q \land r) \equiv (p \lor q) \land (p \lor r) $$ |
-|       Identity       |                            $$ $$                             |
-|       Negation       |                            $$ $$                             |
-|      Idempotent      |                            $$ $$                             |
-|   Double negative    |                            $$ $$                             |
-|   Universal bound    |                            $$ $$                             |
-|     De Morgan's      |                            $$ $$                             |
-|      Absorption      |                            $$ $$                             |
-| Negations of t and c |                            $$ $$                             |
-|     Commutative      |                            $$ $$                             |
+|       Identity       |                   $$ p \lor c \equiv p $$                    |
+|       Negation       |              $$ p \land \sim p \equiv \bf c $$               |
+|   Double negative    |                            N. A.                             |
+|      Idempotent      |                   $$ p \land p \equiv p $$                   |
+|   Universal bound    |               $$ p \land \bf c \equiv \bf c $$               |
+|     De Morgan's      |       $$ \sim (p \lor q) \equiv \sim p \land \sim q $$       |
+|      Absorption      |              $$ p \land (p \lor q) \equiv p $$               |
+| Negations of t and c |                  $$ \sim \bf c \equiv t $$                   |
+
+\newpage
+
+## Condtional statements
+
+If-then conditional statements, if is the hypothesis and q is the conclusion 
+
+| $$ p $$ | $$ q $$ | $$ p \rightarrow q  $$ | $$ \sim p \lor q $$ |
+| :-----: | :-----: | :--------------------: | :-----------------: |
+|    T    |    T    |           T            |          T          |
+|    T    |    F    |           F            |          F          |
+|    F    |    T    |           T            |          F          |
+|    F    |    F    |           T            |          T          |
+
+
+If-and only if means p implies q and q implies p. 
+
+$$ (p \rightarrow q ) \land (q \rightarrow p ) $$
+
+| $$ p $$ | $$ q $$ | $$ p \leftrightarrow q  $$ |
+| :-----: | :-----: | :------------------------: |
+|    T    |    T    |             T              |
+|    T    |    F    |             F              |
+|    F    |    T    |             F              |
+|    F    |    F    |             T              |
