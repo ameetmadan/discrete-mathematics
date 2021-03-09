@@ -14,6 +14,8 @@ The in series circuit is equivalent to the AND truth table, where closed is equi
 
 The in parallel circuit is equivalent to the OR truth table, where closed is equivalent to true and the truth table is only false when both values are false (open). 
 
+\newpage
+
 ## Combinatorial circuit
 
 - cominatorial: type of digital circuit whose output only depends on the current input.
@@ -22,6 +24,26 @@ preserves a memory of the input while a combinational circuit does not (out of s
 
 ![](../images/76ad9f8e868083c0086ef963a970b70797b0ad33b96cb3c8877a51a550801c58.png){ width=350px }
 
+Rules for cominatorial circuits
 
-## Logic gate
+1. Never combine the input wires.
+2. Never feed back the output of a gate into the same gate
 
+- combinatorial equivalence: two circuits can have the same output but built completely differently
+- circuit minimization: for production of electrical circuit it makes sense minimizing more complicated circuits to simplified ones so that they cost lesser in production.
+
+## Logic gates
+
+![](../images/1cf1039d79cb09cc8e880834f5ae93dca4fa27b6a260ec0b048e89a924b8600c.png){ width=450px }
+
+## Disjunctive Normal Form (DNF)
+
+Also called "Or of And's" $$ G(p,q) \equiv (p \land q) \lor (\neg p \land q) $$
+
+## Conjunctive Normal Form (CNF)
+
+Also called "And of Or's" $$ G(p,q) \equiv (p \lor q) \land (\neg p \lor q) $$
+
+## Multiplexer
+
+![](../images/f9e34d3d43f4ce2b757462f39153856655d943327546ecd8849bc7e9b0ae1c55.png)  

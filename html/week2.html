@@ -163,6 +163,22 @@
 <li>sequential: output depends on both the current input and previous outputs. This means a sequential circuit preserves a memory of the input while a combinational circuit does not (out of scope for this course)</li>
 </ul>
 <p><img src="../images/76ad9f8e868083c0086ef963a970b70797b0ad33b96cb3c8877a51a550801c58.png" width="350" /></p>
-<h2 id="logic-gate">Logic gate</h2>
+<p>Rules for cominatorial circuits</p>
+<ol type="1">
+<li>Never combine the input wires.</li>
+<li>Never feed back the output of a gate into the same gate</li>
+</ol>
+<ul>
+<li>combinatorial equivalence: two circuits can have the same output but built completely differently</li>
+<li>circuit minimization: for production of electrical circuit it makes sense minimizing more complicated circuits to simplified ones so that they cost lesser in production.</li>
+</ul>
+<h2 id="logic-gates">Logic gates</h2>
+<p><img src="../images/1cf1039d79cb09cc8e880834f5ae93dca4fa27b6a260ec0b048e89a924b8600c.png" width="450" /></p>
+<h2 id="disjunctive-normal-form-dnf">Disjunctive Normal Form (DNF)</h2>
+<p>Also called “Or of And’s” <span class="math display"><em>G</em>(<em>p</em>, <em>q</em>) ≡ (<em>p</em> ∧ <em>q</em>) ∨ (¬<em>p</em> ∧ <em>q</em>)</span></p>
+<h2 id="conjunctive-normal-form-cnf">Conjunctive Normal Form (CNF)</h2>
+<p>Also called “And of Or’s” <span class="math display"><em>G</em>(<em>p</em>, <em>q</em>) ≡ (<em>p</em> ∨ <em>q</em>) ∧ (¬<em>p</em> ∨ <em>q</em>)</span></p>
+<h2 id="multiplexer">Multiplexer</h2>
+<p><img src="../images/f9e34d3d43f4ce2b757462f39153856655d943327546ecd8849bc7e9b0ae1c55.png" /></p>
 </body>
 </html>
