@@ -44,6 +44,28 @@ Also called "Or of And's" $$ G(p,q) \equiv (p \land q) \lor (\neg p \land q) $$
 
 Also called "And of Or's" $$ G(p,q) \equiv (p \lor q) \land (\neg p \lor q) $$
 
+\newpage
+
 ## Multiplexer
 
-![](../images/f9e34d3d43f4ce2b757462f39153856655d943327546ecd8849bc7e9b0ae1c55.png)  
+This Multiplexer selects the output of the AND operation if the selector S=0, otherwise it selects the output of the OR operation.
+
+![](../images/f9e34d3d43f4ce2b757462f39153856655d943327546ecd8849bc7e9b0ae1c55.png){ width=350px }
+
+## Binary to decimal
+
+For the binary number, read the numbers from bottom to top.
+
+![](../images/0c2f1ebd157e2c2a658a42fa650b523a14a0c7dd019dfaece94b33fe69d430b0.png){ width=350px }
+
+\newpage
+
+## Decimal to binary
+
+Multiply each digit with it's binary equivalent.
+
+![](../images/a553e644a36eb69577055bcf434b4b7d4bf2191bbd3882e19d808cb9aa9f6389.png){ width=350px }
+
+## Half-Adder
+
+## Full-Adder
