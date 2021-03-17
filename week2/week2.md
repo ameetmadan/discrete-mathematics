@@ -68,4 +68,13 @@ Multiply each digit with it's binary equivalent.
 
 ## Half-Adder
 
+![](../images/757ddc03aa8d36ffde6e7d8d2c0a86be454b97944b58e17426d98b37e7cd5038.png){ width=250px }
+![](../images/d1bbd60fa94e74035ca43aebad28bc1ae1a9d9783881ed09a4009514b4c12ef2.png){ width=250px }
+![](../images/4dc9eff915a5b14dac5ae43b12c432981c5276b2b3aa4a93492d2a3e79ab6768.png){ width=250px } 
+
 ## Full-Adder
+
+![](../images/322b8fadf6e0e508916d04a89b0b098607ebf139765f0cb5e26a109a7f60d919.png)
+![](../images/c71f1cfad90a28c2efb8a0439665834386dc0813d1ff326191ce24a66c63612a.png)
+
+![](../images/bb39ac333503e6ed0737df20d28993fd1da2660e544a4bf73352bf86b6565617.png)
