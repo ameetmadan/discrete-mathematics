@@ -34,6 +34,10 @@ Inductive hypothesis: "$P(k) = \frac{k(k+1)}{2}$ is true"
 
 Inductive step: $P(k+1) = \frac{k+1((k+1)+1)}{2} = \frac{(k+1)(k+2)}{2}$
 
-# Reccurences
+$\frac{(k+1)(k+2)}{2}$ is of the same form as $\frac{n(n+1)}{2}$ $\rightarrow (k+1) = n$
+
+## Example: The tromino problem
+
+## Example: The towers of Hanoi
 
 # Recursive functions
