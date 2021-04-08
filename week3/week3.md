@@ -8,6 +8,9 @@ A Sequence is only called an geometric sequence if and if only there is a consta
 
 $a_{k} = a_{k-1} * r$
 
+![](24_03_2021_19.54.png)  
+
+
 ## Arithmetic sequence
 
 A Sequence is only called an arithmetic sequence if and if only there is a constant $d$ such that
@@ -36,8 +39,14 @@ Inductive step: $P(k+1) = \frac{k+1((k+1)+1)}{2} = \frac{(k+1)(k+2)}{2}$
 
 $\frac{(k+1)(k+2)}{2}$ is of the same form as $\frac{n(n+1)}{2}$ $\rightarrow (k+1) = n$
 
-## Example: The tromino problem
+## Example: The triomino problem
+
+See this [link](https://nstarr.people.amherst.edu/trom/puzzle-8by8/) for more 
 
 ## Example: The towers of Hanoi
+
+See this [link](https://www.youtube.com/watch?v=q6RicK1FCUs) for more
+
+# Strong mathematical induction
 
 # Recursive functions
