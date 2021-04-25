@@ -47,7 +47,6 @@ Following cases are also allowed:
 
 ![](14_04_2021_20.56.png)  
 
-
 #### Logarithmic rules
 
 ![](14_04_2021_20.55.png)
