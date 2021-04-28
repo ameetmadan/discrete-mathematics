@@ -46,7 +46,7 @@ Following cases are also allowed:
 
 #### Exponential rules
 
-![](14_04_2021_20.56.png)  
+![](14_04_2021_20.56.png)
 
 #### Logarithmic rules
 
