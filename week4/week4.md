@@ -2,8 +2,9 @@
 
 ### Cantor's defintion of a set
 
-A set is a collection of definite and seperate objects. These objects are called elements of the set. 
-![](14_04_2021_19.53.png)  
+A set is a collection of definite and seperate objects. These objects are called elements of the set.
+
+![](14_04_2021_19.53.png)
 
 An empty set is denoted by { }, it is an unique set with no elements.
 
@@ -53,4 +54,5 @@ Following cases are also allowed:
 
 ## Convolution
 
-## Neural networks
+- Check slides for explaination
+- See this [link](https://phiresky.github.io/convolution-demo/) for a demo
