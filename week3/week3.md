@@ -31,7 +31,7 @@ $a_{k} = a_{k-1} + d$
 
 $1 + 2 + ... + n = \frac{n(n+1)}{2}$ for all integers $n \geq 1$
 
-Base case: $ P(1) = \frac{1(1+1)}{2} = \frac{2}{2} = 1$
+Base case: $P(1) = \frac{1(1+1)}{2}$ = $\frac{2}{2} = 1$
 
 Inductive hypothesis: "$P(k) = \frac{k(k+1)}{2}$ is true"
 
