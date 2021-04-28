@@ -56,7 +56,21 @@ Here we can also see the three conditions clearly.
 
 # Congruences
 
+Let m and n be integers and let d be a postiive integer. We say that m is congruent to n modulo d and write
+
+$m \equiv n$ (mod d)
+
+if an only if, $d | (m-n)$
+
+## Examples
+
+- $12 \equiv 7\ (mod\ 5)$ -> $5 \vert (12-7) = 5$ -> $5 \vert 5$ -> true
+- $6 \equiv -8\ (mod\ 4)$ -> $4 \vert (6-(-8)) = 14$ -> $4 \vert 14$ -> false
+- $3 \equiv 3\ (mod\ 7)$ -> $ 3 \vert (3-3) = 0$ -> $7 \vert 3$ -> true
+
 # Modular arithmetic
+
+![](28_04_2021_21.25.png){width=450px}
 
 ## Inverse modulo n
 
