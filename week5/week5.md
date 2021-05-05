@@ -44,7 +44,9 @@ What this means, when we have three elements $x, y, z$, $x$ is related to $y$ an
 
 ## Example: Equivalence relation
 
-From $A = 4, 5, 6, 7, 8, 10$ we arrived to the relation $R$ = $(4,4), (4, 10), (10, 4), (10, 10), (6, 6), (5, 5), (7, 7), (8, 8), (5, 8), (8, 7), (7, 5)$
+From $A = 4, 5, 6, 7, 8, 10$ we arrived to the relation
+$$R = (4,4), (4, 10), (10, 4), (10, 10), (6, 6), (5, 5), (7, 7), 
+(8, 8), (5, 8), (8, 7), (7, 5)$$
 
 Here we can also see the three conditions clearly.
 
@@ -58,15 +60,15 @@ Here we can also see the three conditions clearly.
 
 Let m and n be integers and let d be a postiive integer. We say that m is congruent to n modulo d and write
 
-$m \equiv n$ (mod d)
+$m ≡ n$ (mod d)
 
 if an only if, $d | (m-n)$
 
 ## Examples
 
-- $12 \equiv 7\ (mod\ 5)$ -> $5 \vert (12-7) = 5$ -> $5 \vert 5$ -> true
-- $6 \equiv -8\ (mod\ 4)$ -> $4 \vert (6-(-8)) = 14$ -> $4 \vert 14$ -> false
-- $3 \equiv 3\ (mod\ 7)$ -> $ 3 \vert (3-3) = 0$ -> $7 \vert 3$ -> true
+- $12 ≡ 7\ (mod\ 5)$ -> $5 \vert (12-7) = 5$ -> $5 \vert 5$ -> true
+- $6 ≡ -8\ (mod\ 4)$ -> $4 \vert (6-(-8)) = 14$ -> $4 \vert 14$ -> false
+- $3 ≡ 3\ (mod\ 7)$ -> $ 3 \vert (3-3) = 0$ -> $7 \vert 3$ -> true
 
 # Modular arithmetic
 
@@ -74,8 +76,55 @@ if an only if, $d | (m-n)$
 
 ## Inverse modulo n
 
-## Bezout's theorem
+The modular inverse of an integer a is an integer x such that: $a ⋅ b ≡ 1 (mod \\ n) $
+
+Example: Inverse of 3 modulo 7
+
+- $3 ⋅ 0 ≡ 0 (mod \\ 7) $
+- $3 ⋅ 1 ≡ 3 (mod \\ 7) $
+- $3 ⋅ 2 ≡ 6 (mod \\ 7) $
+- $3 ⋅ 3 ≡ 2 (mod \\ 7) $
+- $3 ⋅  4 ≡  5  ( m  o  d \\  7) $
+- $\textbf 3 ⋅ \textbf 5 ≡ \textbf 1 \textbf (\textbf m \textbf o \textbf d \\ \textbf 7) $
+- $3 ⋅ 6 ≡ 4 (mod \\ 7) $
+
+## Bezout's theorem and Euclidian Algorithm
+
+$gcd(a,b) = \textbf sa + \textbf tb$
+
+![](05_05_2021_20.56.png)  
 
 ## Example: Ceasar cipher
 
+An encryption system which uses the 26 letters of the alphabet but just by pushing them some places forward.
+
+Example: $A = D$ because our steps we are using is 3, which would mean $B=E$, $C=F$ etc.
+
+Formula for encryption: $C = (M+3) \\ mod \\ 26 $
+
+Formula for decryption: $C = (M-3) \\ mod \\ 26 $
+
+Very easy to hack once the factor is known. 
+
 ## RSA cryptography
+
+In RSA, the plaintext M is converted into ciphertext C according to the following formula:
+
+$C = M^{e}$ $mod$ $pq$
+
+$pq$ and $e$ are the public keys and anyone can use them to encrypt their messages!
+
+The plaintext M for a ciphertext C is then recovered as follows:
+
+$M = C^{d}$ $mod$ $pq$. Where d is the private key; it is secret and only the recipient knows it.
+
+### When does the RSA Cipher work?
+
+For the RSA to work, the following expression must all for all positive integers M < pq: $M = (M^{e})^{d}$ $mod$ $pq$
+
+This holds if:
+
+- $p$ and $q$ are prime
+- $e$ and the product $(p − 1)(q − 1)$ are relatively prime (e.g., their greatest common divisor is 1)
+- $ed ≡ 1$ (mod(p−1)(q−1)).
+  - (i.e., $d$ is the inverse of e modulo $(p − 1)(𝑞 − 1)$).
