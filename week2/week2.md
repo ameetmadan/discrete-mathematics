@@ -40,9 +40,19 @@ Rules for cominatorial circuits
 
 Also called "Or of And's" $$ G(p,q) \equiv (p \land q) \lor (\neg p \land q) $$
 
+- Best when output is 0
+- AND together all variables where output is 1
+- OR togetjer all the 1 rows
+- Simplify
+
 ## Conjunctive Normal Form (CNF)
 
 Also called "And of Or's" $$ G(p,q) \equiv (p \lor q) \land (\neg p \lor q) $$
+
+- Best when output is mostly 1
+- Indentify rows with output 0
+- OR together all variables in some row (negeate when 1)
+- AND together the 0 rows
 
 \newpage
 
